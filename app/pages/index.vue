@@ -9,7 +9,7 @@
         <img
           alt="Hero"
           class="rounded shadow-xl"
-          src="https://unsplash.com/photos/H424WdcQN4Y"
+          src="https://images.unsplash.com/photo-1618335829737-2228915674e0"
         />
       </div>
     </div>
