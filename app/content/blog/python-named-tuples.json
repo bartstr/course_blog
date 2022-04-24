@@ -1,0 +1,5 @@
+{
+  "publishedAt": "24th Apr 2022",
+  "title": "[Python] Named tuples",
+  "content": "A named tuple is a great way to have an immutable object in python. It works like a normal tuple, but all the values can be accessed by a field name. It can be used to operate on data that should NEVER change.\n\n`from collections import namedtuple`\n\n`\nCar = namedtuple('Car', ['color', 'make', 'year'])`\n\n`\ncar1 = Car('red', 'BMW', 2002)`\n\nUsing **_make()** we can create named tuple from any iterable, for example from list.\n\n`example = ['blue', 'Mercedes', 2022]`\n\n`\ncar2 = Car._make(example)`\n\nUsing **\\*\\*** we can create named tuple from dictionary.\n\n`example2 = {'color': 'blue', 'make': 'Audi', 'year': 2022}\ncar3 = Car(**example2)`\n\nUsing **_asdict()** we can create OrderedDict() from named tuple.\n\n`back_to_dict = car3._asdict()\nprint(back_to_dict)\nprint(type(back_to_dict))`"
+}
